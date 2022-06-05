@@ -6,6 +6,7 @@ function Card({label, title = "Mon titre par défaut", picture}) {
       <span>{label}</span>
       <img src={picture} alt="freelance" height={80} width={80} />
       <span>{title}</span>
+      <span></span>
     </div>
   )
 }
