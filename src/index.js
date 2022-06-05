@@ -8,11 +8,20 @@ import Results from './pages/Results';
 import Freelances from './pages/Freelances';
 import Header from './components/Header';
 import Error from './components/Error';
+import { createGlobalStyle } from 'styled-components';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const GlobalStyle = createGlobalStyle`
+    div {
+        font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    }
+`
+
+
 root.render(
   <React.StrictMode>
     <Router>
+      <GlobalStyle/>
       <Header />
       <Routes>
         <Route path="/" element={<Home />}></Route>
